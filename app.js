@@ -14,9 +14,10 @@ app.set("view engine","jade");
 var home = require('./routes/routerHome');
 var dashboard = require('./routes/routerDashboard');
 
-// set controllers
+// set controllers and dirs
 app.use('/', home);
 app.use('/dashboard', dashboard);
+app.use(express.static(__dirname + '/public'));
 
 var server = app.listen(port, function () {
     console.log('Node server is running on port ' + port);

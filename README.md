@@ -9,7 +9,9 @@ Data: 01 de Abril de 2018.
 
 References (thanks to)
 *http://www.tutorialsteacher.com/nodejs/jade-template-engine
+*http://html2jade.aaron-powell.com/
 
+*https://www.hacksparrow.com/express-js-tutorial.html
 
 http://timstermatic.github.io/blog/2013/08/17/a-simple-mvc-framework-with-node-and-express/
 https://naltatis.github.io/jade-syntax-docs/

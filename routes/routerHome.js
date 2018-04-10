@@ -12,7 +12,8 @@ var controllerHome = require('../controllers/controllerHome');
 //     res.send('/HOME');
 // });
 
-router.get('/', controllerHome.itensList);
+router.get('/', controllerHome.index);
 router.get('/:id', controllerHome.getItem);
+//router.get('/', controllerHome.itensList);
 
 module.exports = router;
