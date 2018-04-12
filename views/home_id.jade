@@ -7,3 +7,14 @@ html
     ul
         li #{name}
         li #{idade}
+
+doctype html
+html
+  head
+    title my jade template
+  body
+    h1 Hello itens.
+    ul
+        each item in itens
+            li=item.name
+            li=item.idade

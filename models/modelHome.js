@@ -1,18 +1,28 @@
 var itens = [
     {
-        name:'Bruno', idade:24
+        image:'/img/img-item-1.png',
+        name:'BatleField 3',
+        price:'9,99'
     },
     {
-        name:'Jorge', idade:24
+        image:'/img/img-item-1.png',
+        name:'MOHAA',
+        price:'9,99'
     },
     {
-        name:'Eduardo', idade:24
+        image:'/img/img-item-1.png',
+        name:'Dota 2',
+        price:'9,99'
     },
     {
-        name:'Pedro', idade:24
+        image:'/img/img-item-1.png',
+        name:'Counter Strike GO',
+        price:'9,99'
     },
     {
-        name:'Andre', idade:24
+        image:'/img/img-item-1.png',
+        name:'Lol',
+        price:'9,99'
     }
 ];
 

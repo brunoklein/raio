@@ -1,10 +1,11 @@
 var modelHome = require('../models/modelHome');
 
-exports.index = function(req, res) {
-    res.render('index');
+exports.home = function(req, res) {
+    //res.render('home');
+    res.render('home', modelHome);
 };
 
-exports.itensList = function(req, res) {
+exports.getList = function(req, res) {
     res.render('home', modelHome);
 };
 
