@@ -54,6 +54,7 @@ input {
 /*ITENS*/
 #itens-area {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .img-item {
@@ -61,10 +62,13 @@ input {
 }
 
 /*ABOUT AREA*/
-#about_area {
-    padding-top: 20px
+#about-area {
+    padding-top: 20px;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
+    overflow-y: scroll;
+    background-color: white;
+    color: black;
 }
 
 

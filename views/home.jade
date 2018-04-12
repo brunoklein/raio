@@ -5,6 +5,7 @@ html
     link(rel='stylesheet', href='/libs/bootstrap-4.1.0/css/bootstrap.min.css')
     link(rel='stylesheet', href='/css/index.css')
     script(src='/libs/bootstrap-4.1.0/js/bootstrap.min.js')
+    script(src='/js/home.js')
     title raio key store
   body
   #container
@@ -27,7 +28,7 @@ html
             img.img-item(src=item.image alt='raio key store')
             li=item.name
             li='$' + item.price
-      #about-area.row
+      #about-area.row.col
         div.col-33
           p raio key store
         div.col-33
