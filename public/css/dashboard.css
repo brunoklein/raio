@@ -1,0 +1,21 @@
+#iten-insert {
+    margin-top: 20px;
+}
+
+input {
+    text-align: center !important;
+    margin-top: 5px;
+}
+
+.btn{ 
+    width: 100%;
+}
+
+#itens-list {
+    margin-top: 40px;
+}
+
+.img-item {
+    height: 35px;
+}
+

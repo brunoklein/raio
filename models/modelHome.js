@@ -23,6 +23,26 @@ var itens = [
         image:'/img/img-item-1.png',
         name:'Lol',
         price:'9,99'
+    },
+    {
+        image:'/img/img-item-1.png',
+        name:'Lol',
+        price:'9,99'
+    },
+    {
+        image:'/img/img-item-1.png',
+        name:'Laís Ilha',
+        price:'0,99'
+    },
+    {
+        image:'/img/img-item-1.png',
+        name:'Laís Ilha',
+        price:'9,95'
+    },
+    {
+        image:'/img/img-item-1.png',
+        name:'Laís Ilha',
+        price:'9,80'
     }
 ];
 

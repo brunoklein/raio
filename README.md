@@ -10,6 +10,7 @@ Data: 01 de Abril de 2018.
 References (thanks to)
 *http://www.tutorialsteacher.com/nodejs/jade-template-engine
 *http://html2jade.aaron-powell.com/
+*http://jade-lang.com/reference/iteration
 
 *https://www.hacksparrow.com/express-js-tutorial.html
 

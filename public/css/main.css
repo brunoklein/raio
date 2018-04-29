@@ -6,10 +6,16 @@ body {
 
 #container {
     max-width: 1000px !important;
+    margin: 0 auto;
+    float: none;
 }
 
 li {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 input {
@@ -34,42 +40,3 @@ input {
     margin: 0 auto;
     float: none;
 }
-
-
-/*SEARCH BAR*/
-#search-area {
-    margin-top: 50px;
-}
-
-.search-form {
-
-}
-
-#search-bar {
-    max-width: 65%;
-    margin: 0 auto;
-    float: none;
-}
-
-/*ITENS*/
-#itens-area {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.img-item {
-    height: 95px;
-}
-
-/*ABOUT AREA*/
-#about-area {
-    padding-top: 20px;
-    position: fixed;
-    bottom: 0;
-    overflow-y: scroll;
-    background-color: white;
-    color: black;
-}
-
-
-

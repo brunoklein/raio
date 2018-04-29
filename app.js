@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 var port = 3000;
-var names = ["Bruno", "Dudu", "Edu"];
 
 //set view engine
 app.set("view engine","jade");
@@ -15,12 +14,13 @@ var home = require('./routes/routerHome');
 var dashboard = require('./routes/routerDashboard');
 
 // set controllers and dirs
-app.use('/', home);
+app.use('/dashboard/insert', dashboard);
 app.use('/dashboard', dashboard);
+app.use('/', home);
 app.use(express.static(__dirname + '/public'));
 
 var server = app.listen(port, function () {
-    console.log('Node server is running on port ' + port);
+    console.log('Laís server is running on port ' + port);
 });
 
 module.exports = app;

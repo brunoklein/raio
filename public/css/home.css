@@ -1,0 +1,28 @@
+/*SEARCH BAR*/
+#search-area {
+    margin-top: 50px;
+}
+
+.search-form {
+
+}
+
+#search-bar {
+    max-width: 65%;
+    margin: 0 auto;
+    float: none;
+}
+
+/*ITENS*/
+#itens-area {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.img-item {
+    height: 95px;
+}
+
+
+
+

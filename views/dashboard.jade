@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    script(src='/js/jquery-3.3.1.min.js')
+    link(rel='stylesheet', href='/libs/bootstrap-4.1.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/dashboard.css')
+    script(src='/libs/bootstrap-4.1.0/js/bootstrap.min.js')
+    script(src='/js/dashboard.js')
+    title dashboard - raio key store
+  body
+  #container
+    #menu-area.row.text-center
+      div.col-33
+        p raio key store
+      div.col-33
+        img#img-logo(src='/img/logo.png' alt='raio key store')
+      div.col-33
+        a(href='/') index
+    #iten-insert
+      h1 Insert Itens
+      .iten-form.col
+        form.col(action='/dashboard/insert',method='get')
+          input#iten-name.form-control.input-group-append(type='text', placeholder='Iten name eg: Priston Tale')
+          input#iten-price.form-control.input-group-append(type='text', placeholder='Iten price eg: 9,99')
+          input#iten-image.form-control.input-group-append(type='text', placeholder='Iten image eg: image.png')
+          input.btn.btn-warning(type="submit", value='Insert')
+    #itens-list
+      div.col-sm-12
+        h1 Delete Itens
+        table#itens-table.table
+          tbody
+            tr
+              th Image
+              th Name
+              th Price
+              th Delete
+            each item, index in itens
+              tr
+                td
+                  img.img-item(src=item.image alt='raio key store')
+                td=item.name
+                td='$' + item.price
+                td
+                  a(class='delete-btn', onclick='deleteItem(' + index + ')') X              
+    #about-area.row.text-center
+        div.col-33
+          p raio key store
+        div.col-33
+          p unisinos
+        div.col-33
+          p by brunoklein                  
