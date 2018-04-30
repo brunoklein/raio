@@ -21,11 +21,10 @@ html
     #iten-insert
       h1 Insert Itens
       .iten-form.col
-        form.col(action='/dashboard/insert',method='get')
-          input#iten-name.form-control.input-group-append(type='text', placeholder='Iten name eg: Priston Tale')
-          input#iten-price.form-control.input-group-append(type='text', placeholder='Iten price eg: 9,99')
-          input#iten-image.form-control.input-group-append(type='text', placeholder='Iten image eg: image.png')
-          input.btn.btn-warning(type="submit", value='Insert')
+       form#insert-form.col(action='/dashboard/insert' method='get')
+          input#iten-name.form-control.input-group-append(type='text', placeholder='Iten name eg: Priston Tale' name='name')
+          input#iten-price.form-control.input-group-append(type='text', placeholder='Iten price eg: 9,99' name='price')
+          input.btn.btn-warning(type='submit', value='Insert')
     #itens-list
       div.col-sm-12
         h1 Delete Itens
@@ -43,7 +42,7 @@ html
                 td=item.name
                 td='$' + item.price
                 td
-                  a(class='delete-btn', onclick='deleteItem(' + index + ')') X              
+                  a(class='delete-btn', href='/dashboard/delete/' + index) X              
     #about-area.row.text-center
         div.col-33
           p raio key store

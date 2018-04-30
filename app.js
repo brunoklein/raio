@@ -14,7 +14,6 @@ var home = require('./routes/routerHome');
 var dashboard = require('./routes/routerDashboard');
 
 // set controllers and dirs
-app.use('/dashboard/insert', dashboard);
 app.use('/dashboard', dashboard);
 app.use('/', home);
 app.use(express.static(__dirname + '/public'));

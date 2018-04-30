@@ -21,22 +21,15 @@ html
     #search-area.row
         div.search-form.col
           input#search-bar.form-control.input-group-append(type='text', placeholder='your game here!' onkeyup='search()')
-    //#itens-area.row.text-center
-        each item in itens
-          div.col-sm-4
-            ul#itens-list
-            img.img-item(src=item.image alt='raio key store')
-            li=item.name
-            li='$' + item.price
     #itens-area.row.text-center
-        ul#itens-list
-          each item in itens
+        each item in itens
+          div.itens-list.col-sm-4
+            ul
               li
-                a(href='#')= item.name + ' $' + item.price
-                br
                 img.img-item(src=item.image alt='raio key store')
-                br
-                br
+              li
+                a(href='#')= item.name
+              li='$' + item.price
     #about-area.row.text-center
       div.col-33
         p raio key store

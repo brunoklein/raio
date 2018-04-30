@@ -21,30 +21,45 @@ var itens = [
     },
     {
         image:'/img/img-item-1.png',
-        name:'Lol',
+        name:'Heros of New Storm',
         price:'9,99'
     },
     {
         image:'/img/img-item-1.png',
-        name:'Lol',
+        name:'Leage of Legends',
         price:'9,99'
     },
     {
         image:'/img/img-item-1.png',
-        name:'Laís Ilha',
-        price:'0,99'
+        name:'Super Star Soccer',
+        price:'8,99'
     },
     {
         image:'/img/img-item-1.png',
-        name:'Laís Ilha',
+        name:'Tomb Raider I',
         price:'9,95'
     },
     {
         image:'/img/img-item-1.png',
-        name:'Laís Ilha',
+        name:'Tomb Raider II',
         price:'9,80'
     }
 ];
+
+exports.deleteIten = function(id){
+    if (id > itens.length){
+        return;
+    }
+    itens.remove(id);
+}
+
+exports.insertIten = function(item){
+    console.log('MODEL '+item);
+    if (item == null){
+        return;
+    }
+    itens.push(['/img/img-item-1.png', item.name, item.price]);
+}
 
 module.exports = {
     itens: itens

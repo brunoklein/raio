@@ -7,20 +7,18 @@ $(document).ready(function(){
 });
 
   function search(){
-    var input, filter, ul, li, a, i;
+    var input, filter, itensList, itens, a, i;
     input = document.getElementById("search-bar");
     filter = input.value.toUpperCase();
-    ul = document.getElementById('itens-list');
-    li = ul.getElementsByTagName('li');
-    console.log(li.length);
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
+    itensList = document.getElementById('itens-area');
+    itens = itensList.getElementsByClassName('itens-list');
+    for (i = 0; i < itens.length; i++) {
+        a = itens[i].getElementsByTagName("a")[0];
         console.log(a)
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+            itens[i].style.display = "";
         } else {
-            li[i].style.display = "none";
-
+            itens[i].style.display = "none";
         }
     }
   }
