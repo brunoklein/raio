@@ -4,7 +4,7 @@ Estrutura:
 	Home - página inicial (filtro e exibição de produtos);
 	Cadastro e edição (dashboard da aplicação);
 
-Para iniciar a aplicação
+Para iniciar a aplicação:
 	Estando na raiz do projeto, executar o comando:
 
 		node app.js
