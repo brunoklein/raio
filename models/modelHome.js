@@ -46,7 +46,7 @@ exports.itens = [
     }
 ];
 
-exports.deleteIten = function(id){
+exports.deleteItem = function(id){
     console.log(id);
     if (id > this.itens.length){
         console.log('Invalid id');
@@ -55,11 +55,11 @@ exports.deleteIten = function(id){
     this.itens.splice(id, 1);
 };
 
-exports.insertIten = function(iten){
-    if (iten == null){
-        console.log('Iten = null');
+exports.insertItem = function(item){
+    if (item == null){
+        console.log('Item = null');
         return;
     }
-    this.itens.push(iten);
+    this.itens.push(item);
 };
 

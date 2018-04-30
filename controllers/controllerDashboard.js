@@ -4,18 +4,18 @@ exports.dashboard = function(req, res) {
     res.render('dashboard', modelHome);
 };
 
-exports.insertIten = function(req, res) {
-    var iten = {
+exports.insertItem = function(req, res) {
+    var item = {
         image: '/img/img-item-1.png',
         name: req.query.name,
         price: req.query.price
     };
-    modelHome.insertIten(iten);
+    modelHome.insertItem(item);
     res.render('dashboard', modelHome);
 };
 
-exports.deleteIten = function(req, res) {
+exports.deleteItem = function(req, res) {
     var id = req.params.id;
-    modelHome.deleteIten(id);
+    modelHome.deleteItem(id);
     res.render('dashboard', modelHome);
 };

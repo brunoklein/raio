@@ -13,8 +13,8 @@ var controllerDashboard = require('../controllers/controllerDashboard');
 // });
 
 router.get('/', controllerDashboard.dashboard);
-router.get('/insert', controllerDashboard.insertIten);
-router.get('/delete/:id', controllerDashboard.deleteIten);
+router.get('/insert', controllerDashboard.insertItem);
+router.get('/delete/:id', controllerDashboard.deleteItem);
 //router.get('/:id', controllerDashboard.getItem);
 //router.get('/', controllerHome.itensList);
 
