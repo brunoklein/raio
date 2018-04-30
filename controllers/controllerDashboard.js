@@ -5,14 +5,17 @@ exports.dashboard = function(req, res) {
 };
 
 exports.insertIten = function(req, res) {
-    var iten = {image: '/img/img-item-1.png', name: req.query.name, price: req.query.price};
-    //console.log('Insert iten ' + req.query.price);
-    //modelHome.itens.push(req.query);
-    modelHome.itens.push(iten);
+    var iten = {
+        image: '/img/img-item-1.png',
+        name: req.query.name,
+        price: req.query.price
+    };
+    modelHome.insertIten(iten);
     res.render('dashboard', modelHome);
 };
 
 exports.deleteIten = function(req, res) {
-    modelHome.itens.splice(req.params.id, 1);
+    var id = req.params.id;
+    modelHome.deleteIten(id);
     res.render('dashboard', modelHome);
 };

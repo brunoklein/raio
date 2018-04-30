@@ -1,4 +1,4 @@
-var itens = [
+exports.itens = [
     {
         image:'/img/img-item-1.png',
         name:'BatleField 3',
@@ -47,20 +47,19 @@ var itens = [
 ];
 
 exports.deleteIten = function(id){
-    if (id > itens.length){
+    console.log(id);
+    if (id > this.itens.length){
+        console.log('Invalid id');
         return;
     }
-    itens.remove(id);
-}
-
-exports.insertIten = function(item){
-    console.log('MODEL '+item);
-    if (item == null){
-        return;
-    }
-    itens.push(['/img/img-item-1.png', item.name, item.price]);
-}
-
-module.exports = {
-    itens: itens
+    this.itens.splice(id, 1);
 };
+
+exports.insertIten = function(iten){
+    if (iten == null){
+        console.log('Iten = null');
+        return;
+    }
+    this.itens.push(iten);
+};
+
